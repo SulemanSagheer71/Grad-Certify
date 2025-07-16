@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.Grad Certify.com/blog-repository/lifecycle-ai-data-science by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 04:37:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Lifecycle Of AI In Data Science | Grad Certify Blog
+</title>
+  <meta name="title" content="Lifecycle of AI in Data Science: Key Stages & Best Practices">
+  <meta name="description" content="Discover the complete lifecycle of AI in data science—from data collection to model deployment. Learn key stages, challenges, and best practices to optimize AI-driven insights.">
+
+  <link rel="canonical" href="lifecycle-ai-data-science.html" />
+
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style1.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="../assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="../assets/images/hero-banner-1.html">
+  <link rel="preload" as="image" href="../assets/images/hero-banner-2.html">
+  <link rel="preload" as="image" href="../assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="../assets/images/hero-shape-2.png">
+
+<style type="text/css">
+    .article-sec {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .article-hero {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-top: 70px;
+    }
+
+    .article-hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .article-hero .title-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .article-con {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .article-title {
+      font-size: 32px;
+      margin: 20px 0;
+      text-transform: capitalize;
+      font-family: Arial, sans-serif;
+      color: #000;
+
+
+    }
+
+    .article-content {
+      margin-bottom: 40px;
+      font-family: Arial, sans-serif;
+      color: #000;
+      font-size: 1.5rem;
+    }
+
+    .article-content h3{
+      font-size: 21px;
+    }
+    .article-content p{
+      font-size: 16px;
+    }
+
+
+    .article-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .article-author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .social-share {
+      gap: 10px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+      display: flex;
+
+    }
+
+    .social-share a {
+      text-decoration: none;
+      color: white;
+      background: #4285f4;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1rem;
+      text-align: center;
+      align-items: center;
+    }
+
+
+    .article-subscribe {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+
+    .article-subscribe input {
+      padding: 10px;
+      width: calc(100% - 40px);
+      max-width: 500px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .article-subscribe button {
+      padding: 10px 20px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+   .recommended {
+        padding: 0px;
+      }
+
+      .recommended h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #000;
+        font-family: sans-serif;
+      }
+
+      .recommended-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .recommended-card {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: #fff;
+      }
+
+      .recommended-image {
+        width: 300px;
+        height: 200px;
+      }
+
+      .recommended-content {
+        padding: 15px;
+      }
+
+      .recommended-content a h3:hover{
+        color: deepskyblue;
+      }
+
+      .recommended-title {
+        margin: 10px 0;
+        font-size: 21px;
+        color: #000;
+        font-family: sans-serif;
+      }
+
+      .recommended-description {
+        color: #666;
+      }
+
+    @media (max-width: 768px) {
+      .article-hero {
+        height: auto;
+        width: 100%;
+      }
+
+      .article-hero img{
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .article-hero .title-overlay {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+
+      .article-title {
+        font-size: 18px;
+      }
+
+      .article-content h3{
+      font-size: 16px;
+    }
+
+      .social-share a {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+      }
+
+      .article-author img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .article-subscribe input {
+        width: 100%;
+      }
+    }
+
+  /**================  **/
+  .article-subscribe {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 900px;
+        }
+
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+
+        .popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .popup .close-btn:hover {
+            color: red;
+        }
+
+        /* Background overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+  </style>
+
+
+
+</head>
+
+<body id="top">
+
+ <!-- =============== HEADER ================ -->
+
+   <header class="header" data-header>
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="auto" alt="Grad Certify logo">
+      </a>
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <a href="../index.html" class="logo">
+            <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="50" alt="Grad Certify logo">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../about-us.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../job-guaranteed-courses.html" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../milestone-achievers.html" class="navbar-link" data-nav-link>Our Milestone</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../all-blogs.html" class="navbar-link" data-nav-link>Blogs</a>
+          </li> 
+
+          <li>
+            <a href="../webinar.html" class="navbar-link" data-nav-link>Webinar</a>
+          </li>
+          
+           <li>
+            <a href="../elevateX.html" class="navbar-link" data-nav-link>ElevateX</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="../contact-us.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+          <!--<a href="https://wa.me/917411464640" target="_blank" class="btn has-before" style="background-color:blue;">Free Counseling</a>-->
+
+        <a href="../contact-us.html" class="btn has-before">
+          <span class="span">Apply Now</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+<!-- BODY -- ---------------------- -->
+<section class="article-sec">
+  <div class="article-hero">
+    <img src="../assets/images/articles/banner_12.png" alt="Lifecycle Of AI In Data Science">
+    <!--<div class="title-overlay">Why Generative AI is the Game-Changer for Aspiring Data Scientists </div> -->
+  </div>
+
+  <div class="container article-con">
+    <h1 class="article-title">Lifecycle Of AI In Data Science</h1>
+
+    <div class="article-content">
+<!-- ==  BLOG CONTENT ============ -->
+      <h3>Introduction</h3>
+      <p>Artificial intelligence has revolutionized several organizations across various industries. It has optimized operations, decreased costs, and improved overall productivity. In data analytics, e-commerce, and marketing, it has influenced leading organizations in making challenging decisions. It achieves this by analyzing a vast amount of data quickly and suggesting a suitable path based on its findings through machine learning algorithms. The prime application of AI in data science is that it is used to resolve problems and set the right path to lead a project. </p><br>
+      <center> <img src="../assets/images/articles/ai-life-cycle.png" alt="AI Life Cycle" style="max-width: 100%; height: auto;"></center><br>
+
+      <p>An AI development lifecycle starts with problem definition, stakeholder analysis, gathering requirements, access feasibility, defining the criteria for success, analyzing potential biases, performing ethical impact assessment, and ensuring regulatory compliance. Whether you are a professional or a fresher, it is vital for you to learn the lifecycle of AI in data science. Here is a gist of the lifecycle of AI. </p><br>
+
+      <h4>In this blog, you will learn:</h4>
+      <p>
+        <ul>
+          <li>● Data acquisition and model development</li>
+          <li>● Model evaluation and deployment</li>
+          <li>● Machine learning and model monitoring</li>
+          <li>● Benefits of implementing a robust AI project lifecycle</li>
+        </ul>
+      </p><br>
+
+      <h3>Data Acquisition and Model Development</h3>
+      <p>Data acquisition or data collection is the first component of a data lifecycle. Here, the objective of an AI system is to gather raw material to train AI models that are collected from multiple sources, this includes data augmentation or data generation. It evaluates and identifies data sources, implements data acquisition methods, applies data sampling techniques, checks data quality, labels data, establishes data governance, ensures privacy, and manages consent. </p><br>
+      <p>The next step of the lifecycle is data preparation. Without proper data preparation, AI models are likely to deliver inaccurate results. Refined data enables the AI system to make decisions with improved accuracy. A data science engineer is responsible for cleaning, integrating, and transforming data. Followed by this it is ideal to augment the dataset, label the data and version it, and develop data pipelines. </p><br>
+      <center> <img src="../assets/images/articles/datascience-life-cycle.png" alt="AI Life Cycle" style="max-width: 100%; height: auto;"></center><br>
+
+      <p>In the model design phase, the architecture of the model needs to be defined, this includes the layers and nodes in a neural network. This is sure to ensure efficient training, validation, and testing of the AI system. Here, an engineer is expected to select the model, design the architecture, optimize hyperparameters, apply transfer learning, implement ensemble methods, incorporate interpretability, and incorporate security measures as well. </p><br>
+
+      <h3>Model Evaluation and Deployment</h3>
+      <p>Once the model is designed, a data science engineer will expose the model to the prepared data. This model will learn patterns and relationships from this data and make decisions based on this data. This process will continue until the model achieves an appropriate level of accuracy. Algorithms play an essential role in model training as they adjust the model’s parameters to minimize errors. It is also important to remember that the quality of training improves the effectiveness of the AI system. A data science engineer’s role would be to implement training algorithms, select loss functions, apply regularization, apply regularization, apply regularization, and optimize batch size. They must also distribute training across multiple GPUs, save checkpoints, and monitor the training progress.</p><br>
+      <p>Once the model has been designed, its performance needs to be assessed with a separate validation dataset. Here, the model’s ability to predict accurate results is tested in a new data set. A data science engineer needs to apply evaluation metrics for the specific AI task, implement cross-validation methods, assess biases, conduct robustness testing, perform A/B testing, analyze errors, and evaluate interpretability. </p><br>
+      <center> <img src="../assets/images/articles/model-evaluation.png" alt="AI Life Cycle" style="max-width: 100%; height: auto;"></center><br>
+      <p>After the model has been trained and assessed, it needs to be deployed into the production environment. Here, the model takes new data, makes predictions, and delivers accurate results in real-time or batch mode depending on the scenario. A data science professional needs to choose the deployment strategy, implement model serving, containerize the model, ensure optimum integration, and ensure scalability. They also need to ensure version control, perform integration testing, create a comprehensive document, and implement appropriate tools to ensure monitoring. </p><br>
+
+      <h3>Model Monitoring</h3>
+      <p>The final part of the AI lifecycle is model monitoring, which ensures the model performs at its best over a period of time. The model is monitored using relevant metrics and feedback. Its performance is checked against its predictions or any decline in the accuracy or effectiveness of the signals. This is an ongoing process that will ensure that AI remains adaptable in the long run.</p><br>
+      <p>The final phase of the AI lifecycle management involves performance monitoring, data drift detection, anomaly monitoring, feedback loop implementation, updating the model to safeguard it from vulnerabilities, and redeploying it whenever required. All these operations are powered by machine learning algorithms. In addition to all this, AI projects need to adapt to changes in requirements, cope with unexpected issues with the data, and stay sustainable. The same process applies to the gen AI lifecycle also. </p><br>
+
+      <h3>Benefits of Implementing a Robust AI Project Lifecycle</h3>
+      <p>A robust AI project lifecycle helps data science teams plan AI projects optimally and ensure a higher success rate. It can flag potential issues that are fresh and mitigate them. It also ensures improved efficiency and productivity with a structured project life cycle and a streamlined workflow. A well-defined project life cycle ensures enhanced quality of the AI solution. Also, periodic maintenance and updates are also vital. A robust AI project lifecycle ensures enhanced resource allocation as most projects require significant resources including time, human experience, and computational power. This ensures that resources are balanced at each stage of the life cycle.</p><br>
+
+      <p>At <a href="../courses/data-science-with-generative-ai.html" style="display: inline; color: deepskyblue;">Grad Certify</a>, you can learn the AI lifecycle in great detail through our lecturers. Unlike a conventional online learning platform which consists of watching various videos and going through hours of reading, Grad Certify provides a virtual classroom environment that enables learners to connect with the lecturer and resolve their doubts at the time. You can learn from trainers who are industry leaders in the field of generative AI and data science. Grad Certify also provides hands-on training through a practical approach and capstone projects. They also offer career assistance and placement assistance. You can get in touch with them <a href="../contact-us-2.html" style="display: inline; color: deepskyblue;">here</a> for more information on the course. </p><br>
+  
+
+      <!-- ================ REFERENCE ============== -->
+
+      <h3>Reference links:</h3>
+      <p style="color:deepskyblue; font-size: 14px;">
+        <a href="https://www.datascience-pm.com/ai-lifecycle/" target="_blank">https://www.datascience-pm.com/ai-lifecycle/</a>
+
+        <a href="https://www.paloaltonetworks.com/cyberpedia/ai-development-lifecycle" target="_blank">https://www.paloaltonetworks.com/cyberpedia/ai-development-lifecycle</a>
+        <a href="https://www.linkedin.com/pulse/generative-ai-end-to-end-life-cycle-mahesh-tripathy-tqilf">https://www.linkedin.com/pulse/generative-ai-end-to-end-life-cycle-mahesh-tripathy-tqilf</a>
+        <a href="https://coe.gsa.gov/coe/ai-guide-for-government/understanding-managing-ai-lifecycle/#:~:text=The%20AI%20lifecycle%20is%20the,%2C%20development%2C%20and%20deployment%20phases">https://coe.gsa.gov/coe/ai-guide-for-government/understanding-managing-ai-lifecycle/#:~:text=The%20AI%20lifecycle%20is%20the,%2C%20development%2C%20and%20deployment%20phases</a>
+      </p>
+      
+    </div>
+<!-- ============ AUTHOR DETAILS ============== -->
+    <div class="article-author">
+      <img src="../assets/images/articles/author/Akassh_Vijay.jpg" alt="Akassh Vijay">
+      <div>
+        <h3>Akassh Vijay</h3>
+        <p> <a href="https://www.linkedin.com/in/akassh-vijay-b4548483/" target="_blank" style="color: deepskyblue;">LinkedIn</a> </p>
+      </div>
+    </div>
+<!-- ========= SOCIAL SHARE ================ -->
+    <h4 style="font-family: sans-serif; color:#000;">Share on Social Platform:</h4>
+    <div class="social-share">
+      <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" target="_blank"><i class="fab fa-facebook-f" style="font-size: 18px; "></i></a>
+      <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" target="_blank"><i class="fab fa-instagram" style="font-size: 18px; "></i></a>
+      <a href="https://www.linkedin.com/company/Grad Certify-com/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 18px; "></i></a>
+    </div>
+
+<!-- ============== SUBSCRIBE ================== -->
+     <div class="article-subscribe">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscribeForm">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <center><button type="submit">Subscribe</button></center>
+        </form>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="popup">
+        <button class="close-btn" id="closePopup">&times;</button>
+        <p id="popupMessage"></p>
+    </div>
+<!-- ========  RECOMMENDED ============== -->
+   <div class="recommended">
+      <h2>Recommended Articles</h2>
+      <div class="recommended-container">
+
+        <div class="recommended-card">
+          <img src="../assets/images/articles/article_8.png" alt="Machine Learning and its Applications" class="recommended-image">
+          <div class="recommended-content">
+            <a href="machine-learning-applications-data-science.html"><h3 class="recommended-title">Machine Learning and its Applications in Data Science</h3></a> 
+            <p class="recommended-description">Most people have a misconception that machine learning (ML) is related to coding and its applications are confined to programming and cloud computing.</p>
+          </div>
+        </div>
+<!-- ===================================== -->
+        <div class="recommended-card">
+          <img src="../assets/images/articles/article_7.png" alt="Neural Network and its Role" class="recommended-image">
+          <div class="recommended-content">
+            <a href="elements-of-neural-network-role-in-data-science.html"><h3 class="recommended-title">Elements of a Neural Network and its Role in Data Science</h3></a> 
+            <p class="recommended-description">Did you know that neural networks are applied in over six major industries? The main advantage is that neural networks can help AI systems make decisions with limited human interference.</p>
+          </div>
+        </div>
+<!-- ================================================== -->
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    </article>
+  </main>
+
+
+
+
+
+  
+<!-- -------BODY END -------------------------- -->
+
+<!-- =============== FOOTER ================ -->
+
+ 
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href=" " class="logo">
+            <img src="../assets/images/update-img/Grad Certify.png" width="162" height="50" alt="Grad Certify logo">
+          </a>
+
+          <p class="footer-brand-text">
+            At Grad Certify, we offer comprehensive online courses with expert instructors and cutting-edge curriculum, Grad Certify is the perfect choice for those serious about success in the tech industry.
+          </p>
+
+         <!-- <div class="wrapper">
+            <span class="span">Address:</span>
+
+            <address class="address"> B-Block, BHIVE Workspace - No.112, AKR Tech Park, "A" and, 7th Mile Hosur Rd, Krishna Reddy Industrial Area, Bengaluru, Karnataka- s560068</address>
+          </div> -->
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+917411464640" class="footer-link">+91 7411 464 640</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:support@Grad Certify.com" class="footer-link">support@Grad Certify.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Comapny</p>
+          </li>
+
+          <li>
+            <a href="../about-us.html" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="../job-guaranteed-courses.html" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="../policy/Privacy-Policy.html" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="../policy/terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="../policy/refund-cancellation-policy.html" class="footer-link">Refund/Cancellation policy</a>
+          </li>
+
+          <!--<li>-->
+          <!--  <a href="../policy/cancellation-policy" class="footer-link">Cancellation Policy</a>-->
+          <!--</li>-->
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="../contact-us.html" class="footer-link">Contact Us</a>
+          </li>
+
+            <li>
+            <a href="../instructors.html" class="footer-link">Instructor</a>
+          </li> 
+
+          <li>
+            <a href="../our-team.html" class="footer-link">Our Team</a>
+          </li>
+
+
+          <li>
+            <a href="../all-blogs.html" class="footer-link">Blogs</a>
+          </li>
+
+          <!--<li>-->
+          <!--  <a href="../news-updates" class="footer-link">News</a>-->
+          <!--</li>-->
+          
+           <!--<li>
+            <a href="../current-openings.php" class="footer-link">Current Openings</a>
+          </li> -->
+
+          <li>
+            <a href="../faqs.html" class="footer-link">FAQs</a>
+          </li>
+          
+            <li>
+              <a
+                href="https://www.google.com/search?sca_esv=0e58669465c64ea2&amp;rlz=1C1CHBF_enIN1024IN1024&amp;sxsrf=AE3TifPDQXz4KGp_OPnFaNKkzY5IjuTYkA:1750921551557&amp;si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1oJ7PBp83PEWzfEE9P0MDjL0cfOCHY1-lOgc1vdWqwnRkzMJyy_fGEJbvyYLZ_huGqqZ7dewNNaquMeY9EO6NJbz-X9&amp;q=Grad Certify+Pvt+Ltd+Reviews&amp;sa=X&amp;ved=2ahUKEwiQwfCIw46OAxUPzTgGHQGjKBYQ0bkNegQINBAE&amp;cshid=1750921567441879&amp;biw=1536&amp;bih=695&amp;dpr=1.25#lrd=0x890b8701b2132843:0x20a4928ed3930407,3,,,,"
+                class="footer-link"
+                >Review Us</a
+              >
+            </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="#" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/company/Grad Certify-com/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <!--<li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li> -->
+
+            <li>
+              <a href="https://www.youtube.com/@Grad Certify-LeadwithSkills" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2025 All Rights Reserved by <a href="../index.html" class="copyright-link">Grad Certify</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="../../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="../../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Example JavaScript for handling subscriptions
+    document.querySelector('.subscribe button').addEventListener('click', () => {
+      const email = document.querySelector('.subscribe input').value;
+      if (email) {
+        alert(`Thank you for subscribing with ${email}!`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  </script>
+
+<!-- ======= SUBSCRIBE ============= -->
+ <script>
+        // Get elements
+        const form = document.getElementById('subscribeForm');
+        const popup = document.getElementById('popup');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const closePopup = document.getElementById('closePopup');
+        const popupMessage = document.getElementById('popupMessage');
+
+        // Handle form submission
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent page reload
+
+            // Get the email value
+            const email = document.getElementById('email').value;
+
+            // Send data to PHP using AJAX
+            fetch('subscribe.html', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `email=${encodeURIComponent(email)}`
+            })
+            .then(response => response.text())
+            .then(data => {
+                if (data.trim() === 'success') {
+                    popupMessage.textContent = 'Thank you for subscribing!';
+                } else {
+                    popupMessage.textContent = data;
+                }
+                popup.style.display = 'block';
+                popupOverlay.style.display = 'block';
+                form.reset();
+            })
+            .catch(error => {
+                popupMessage.textContent = 'An error occurred. Please try again.';
+                popup.style.display = 'block';
+                popupOverlay.style.display = 'block';
+            });
+        });
+
+        // Close popup
+        closePopup.addEventListener('click', function () {
+            popup.style.display = 'none';
+            popupOverlay.style.display = 'none';
+        });
+
+        popupOverlay.addEventListener('click', function () {
+            popup.style.display = 'none';
+            popupOverlay.style.display = 'none';
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from www.Grad Certify.com/blog-repository/lifecycle-ai-data-science by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 04:37:55 GMT -->
+</html>

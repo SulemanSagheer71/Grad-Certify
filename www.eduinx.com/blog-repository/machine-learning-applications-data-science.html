@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.Grad Certify.com/blog-repository/machine-learning-applications-data-science by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 04:37:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Machine Learning and its Applications in Data Science | Grad Certify Blog
+</title>
+  <meta name="title" content="Machine Learning in Data Science: Key Applications & Benefits">
+  <meta name="description" content="Discover how machine learning powers data science with real-world applications, from predictive analytics to automation. Learn key benefits and industry use cases.">
+
+  <link rel="canonical" href="machine-learning-applications-data-science.html" />
+
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style1.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="../assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="../assets/images/hero-banner-1.html">
+  <link rel="preload" as="image" href="../assets/images/hero-banner-2.html">
+  <link rel="preload" as="image" href="../assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="../assets/images/hero-shape-2.png">
+
+<style type="text/css">
+    .article-sec {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .article-hero {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-top: 70px;
+    }
+
+    .article-hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .article-hero .title-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .article-con {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .article-title {
+      font-size: 32px;
+      margin: 20px 0;
+      text-transform: capitalize;
+      font-family: Arial, sans-serif;
+      color: #000;
+
+
+    }
+
+    .article-content {
+      margin-bottom: 40px;
+      font-family: Arial, sans-serif;
+      color: #000;
+      font-size: 1.5rem;
+    }
+
+    .article-content h3{
+      font-size: 21px;
+    }
+    .article-content p{
+      font-size: 16px;
+    }
+
+
+    .article-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .article-author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .social-share {
+      gap: 10px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+      display: flex;
+
+    }
+
+    .social-share a {
+      text-decoration: none;
+      color: white;
+      background: #4285f4;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1rem;
+      text-align: center;
+      align-items: center;
+    }
+
+
+    .article-subscribe {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+
+    .article-subscribe input {
+      padding: 10px;
+      width: calc(100% - 40px);
+      max-width: 500px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .article-subscribe button {
+      padding: 10px 20px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+   .recommended {
+        padding: 0px;
+      }
+
+      .recommended h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #000;
+        font-family: sans-serif;
+      }
+
+      .recommended-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .recommended-card {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: #fff;
+      }
+
+      .recommended-image {
+        width: 300px;
+        height: 200px;
+      }
+
+      .recommended-content {
+        padding: 15px;
+      }
+
+      .recommended-content a h3:hover{
+        color: deepskyblue;
+      }
+
+      .recommended-title {
+        margin: 10px 0;
+        font-size: 21px;
+        color: #000;
+        font-family: sans-serif;
+      }
+
+      .recommended-description {
+        color: #666;
+      }
+
+    @media (max-width: 768px) {
+      .article-hero {
+        height: auto;
+        width: 100%;
+      }
+
+      .article-hero img{
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .article-hero .title-overlay {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+
+      .article-title {
+        font-size: 18px;
+      }
+
+      .article-content h3{
+      font-size: 16px;
+    }
+
+      .social-share a {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+      }
+
+      .article-author img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .article-subscribe input {
+        width: 100%;
+      }
+    }
+
+  /**================  **/
+  .article-subscribe {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 900px;
+        }
+
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+
+        .popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .popup .close-btn:hover {
+            color: red;
+        }
+
+        /* Background overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+  </style>
+
+
+
+</head>
+
+<body id="top">
+
+ <!-- =============== HEADER ================ -->
+
+   <header class="header" data-header>
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="auto" alt="Grad Certify logo">
+      </a>
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <a href="../index.html" class="logo">
+            <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="50" alt="Grad Certify logo">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../about-us.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../job-guaranteed-courses.html" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../milestone-achievers.html" class="navbar-link" data-nav-link>Our Milestone</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../all-blogs.html" class="navbar-link" data-nav-link>Blogs</a>
+          </li> 
+
+          <li>
+            <a href="../webinar.html" class="navbar-link" data-nav-link>Webinar</a>
+          </li>
+          
+           <li>
+            <a href="../elevateX.html" class="navbar-link" data-nav-link>ElevateX</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="../contact-us.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+          <!--<a href="https://wa.me/917411464640" target="_blank" class="btn has-before" style="background-color:blue;">Free Counseling</a>-->
+
+        <a href="../contact-us.html" class="btn has-before">
+          <span class="span">Apply Now</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+<!-- BODY -- ---------------------- -->
+<section class="article-sec">
+  <div class="article-hero">
+    <img src="../assets/images/articles/banner_11.png" alt="Machine Learning and its Applications">
+    <!--<div class="title-overlay">Why Generative AI is the Game-Changer for Aspiring Data Scientists </div> -->
+  </div>
+
+  <div class="container article-con">
+    <h1 class="article-title">Machine Learning and its Applications in Data Science</h1>
+
+    <div class="article-content">
+<!-- ==  BLOG CONTENT ============ -->
+      <h3>Introduction</h3>
+      <p>Most people have a misconception that machine learning (ML) is related to coding and its applications are confined to programming and cloud computing. However, there are a lot of machine learning applications in data science. Did you know that <a href="https://research.aimultiple.com/ml-stats/" target="_blank" style="display: inline; color: deepskyblue;">65%</a> of companies that plan to adopt machine learning say that technology helps businesses make decisions? With many organizations allocating a separate budget for their ML applications, there is more scope for data scientists and machine learning engineers. There is an increasing emphasis on industries to use data to improve their products or services. </p><br>
+
+      <p>Machine learning and data science go hand in glove as data science engineers use ML to make more appropriate decisions that favor business growth and help mitigate risks. Therefore, it is ideal for freshers and working professionals to take up a machine learning course to gain a better understanding. Before learning the advanced concepts of ML, you need to learn the basics and how ML is applied in data science. </p><br>
+
+      <h3>What is Machine Learning and What are its Applications?</h3>
+      <p>ML is a subset of AI that allows any software application or app to be more precise and accurate in predicting outcomes. ML algorithms use historical data to predict new outcomes or output values. For instance, ML is used in cybersecurity to identify user engagement and behavior and detect abnormal patterns that could result in data breaches. They are used in identifying frauds, malware, and more. In other industries, they are used in recommendation engines, spam filtering, healthcare, and more. </p><br>
+
+      <p>Due to the exponential growth of technology and the application of AI systems, organizations need efficient tools to understand data. ML plays a key role in improving business decisions, increasing productivity, forecasting weather, and more. Companies are looking for data science engineers with expertise in machine learning and generative AI. By learning ML and gen AI, you can become a valuable resource in data science. </p><br>
+
+      <h3>Automatic Language Translation</h3>
+      <p>ML can help tourists by converting text into our known language. This can help tourists to communicate better with the locals. One such popular app that is widely used is Google’s GNMT (Google Neural Machine Translation). This application uses a technology called neural machine learning to translate the text, this is also known as automatic translation. The technology that empowers automatic translation is a sequence learning algorithm that is used with image recognition and translates the text from one language to another. </p><br>
+
+      <h3>Medical Diagnostics</h3>
+      <p>Did you know that ML and data analytics are used in healthcare? It is used to diagnose diseases and build 3D models that predict the position of tumors in a precise and concise manner. This has helped neurologists to locate any abnormalities in the brain with ease. Healthcare professionals have begun using ML to empower operations related to classifying Parkinson’s disease, detecting pneumonia, and classifying breast cancer with nearly 90% accuracy. This has transformed the healthcare and pharma industry in research and development of new drugs and treatments. </p><br>
+
+      <h3>Online Fraud Detection</h3>
+      <p>With increasing incidents of spam and fraudulent activities, there is an increased emphasis on improving cybersecurity protocols. Fraudulent transactions are now on the rise and banks are trying their best to curb them. ML systems are used to identify fraudulent transactions by studying data and identifying any abnormalities with ease. If an ML system identifies a suspicious activity, it will automatically flag it and notify the administrator. Also, these systems constantly update themselves by learning new patterns and trends deployed by fraudsters. ML systems are also used in filtering spam emails. </p><br>
+
+      <h3>Virtual Personal Assistant and Image Recognition</h3>
+      <p>Did you know that the personal assistants which we use are not only powered by AI but also powered by ML algorithms? Voice assistants like Cortana, Siri, Google Assistant, and Alexa use ML algorithms to record voice instructions, send them over to the server on a cloud, decode them, and provide suggestions based on data from previous conversations that happened in the past. </p><br>
+
+      <p>ML technology plays a pivotal role in deep learning methods. When integrated with generative AI, it can classify images and group them according to the data. Did you know that many organizations use ML in face recognition for employee attendance tracking? This technology has transformed the healthcare industry in disease recognition and diagnosis by studying a series of healthy images and detecting abnormalities based on the data. </p><br>
+
+      <h3>Product Recommendations</h3>
+      <p>E-commerce and entertainment companies deploy ML algorithms in their operations to analyze large datasets and provide personalized product recommendations based on user engagement and demographics. You might have browsed for water heaters on Amazon and left the website about two hours ago. However, when you are working on something else on your browser, you may see recommendations about water heaters while on another webpage. This is where ML algorithms come into play as they keenly analyze the user’s interest and provide suitable suggestions. </p><br>
+
+      <h3>Self-driving Cars</h3>
+      <p>When the automobile industry was skeptical of implementing ML into its driver-aid systems, Elon Musk, the founder of Tesla, implemented an unsupervised learning method to train car models to detect people and objects while driving. Although this technology is still not fully developed and tested, other automobile brands have started the research and development in building self-driving cars. </p><br>
+
+      <h3>Traffic Prediction</h3>
+      <p>Google has deployed ML algorithms to analyze the number of vehicles on the road and suggest alternate routes according to the data. ML helps in predicting traffic conditions and provides you an estimation about the average time taken to reach the location. It is designed to take information from the user and send it back to the database for analysis and performance improvement. Data scientists can further analyze this data to improve the current algorithms and fine tune the system to provide more accurate results. </p><br>
+      <p>Regardless of which industry you work for, knowing machine learning and generative AI with data science is sure to take you miles ahead in your professional career. Now that you have understood the basics of ML, it is time for you to take up a machine learning course with data science and gen AI. Grad Certify provides the right platform for you to learn the practical applications of ML algorithms in data analytics. They have a team of industry experts who help you understand different types of machine learning applications in data science. They also teach you Python for machine learning and data science to ensure that you stay ahead of the competition. You can also get 360-degree career support with real-time experience by performing capstone projects at Grad Certify.</p> <br>
+
+      
+      
+
+      <!-- ================ REFERENCE ============== -->
+
+      <h3>Reference links:</h3>
+      <p style="color:deepskyblue; font-size: 14px;">
+        <a href="https://www.javatpoint.com/applications-of-machine-learning" target="_blank">https://www.javatpoint.com/applications-of-machine-learning</a>
+
+        <a href="https://www.geeksforgeeks.org/machine-learning-introduction/" target="_blank">https://www.geeksforgeeks.org/machine-learning-introduction/</a>
+        <a href="https://www.zucisystems.com/blog/what-is-the-role-of-machine-learning-in-data-science/">https://www.zucisystems.com/blog/what-is-the-role-of-machine-learning-in-data-science/</a>
+      </p>
+      
+    </div>
+<!-- ============ AUTHOR DETAILS ============== -->
+    <div class="article-author">
+      <img src="../assets/images/articles/author/Akassh_Vijay.jpg" alt="Akassh Vijay">
+      <div>
+        <h3>Akassh Vijay</h3>
+        <p> <a href="https://www.linkedin.com/in/akassh-vijay-b4548483/" target="_blank" style="color: deepskyblue;">LinkedIn</a> </p>
+      </div>
+    </div>
+<!-- ========= SOCIAL SHARE ================ -->
+    <h4 style="font-family: sans-serif; color:#000;">Share on Social Platform:</h4>
+    <div class="social-share">
+      <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" target="_blank"><i class="fab fa-facebook-f" style="font-size: 18px; "></i></a>
+      <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" target="_blank"><i class="fab fa-instagram" style="font-size: 18px; "></i></a>
+      <a href="https://www.linkedin.com/company/Grad Certify-com/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 18px; "></i></a>
+    </div>
+
+<!-- ============== SUBSCRIBE ================== -->
+     <div class="article-subscribe">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscribeForm">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <center><button type="submit">Subscribe</button></center>
+        </form>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="popup">
+        <button class="close-btn" id="closePopup">&times;</button>
+        <p id="popupMessage"></p>
+    </div>
+<!-- ========  RECOMMENDED ============== -->
+   <div class="recommended">
+      <h2>Recommended Articles</h2>
+      <div class="recommended-container">
+
+        <div class="recommended-card">
+          <img src="../assets/images/articles/article_7.png" alt="Neural Network and its Role" class="recommended-image">
+          <div class="recommended-content">
+            <a href="elements-of-neural-network-role-in-data-science.html"><h3 class="recommended-title">Elements of a Neural Network and its Role in Data Science</h3></a> 
+            <p class="recommended-description">Did you know that neural networks are applied in over six major industries? The main advantage is that neural networks can help AI systems make decisions with limited human interference.</p>
+          </div>
+        </div>
+<!-- ===================================== -->
+        <div class="recommended-card">
+          <img src="../assets/images/articles/article_6.png" alt="Gen AI in Data Analytics1" class="recommended-image">
+          <div class="recommended-content">
+            <a href="practical-applications-generative-ai-data-analytics.html"> <h3 class="recommended-title">9 Practical Applications of Gen AI in Data Analytics</h3></a>
+            <p class="recommended-description">With generative AI becoming the new normal in today’s competitive landscape, organizations are proactively hiring gen AI and data science professionals on a large scale.</p>
+          </div>
+        </div>
+<!-- ================================================== -->
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    </article>
+  </main>
+
+
+
+
+
+  
+<!-- -------BODY END -------------------------- -->
+
+<!-- =============== FOOTER ================ -->
+
+ 
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href=" " class="logo">
+            <img src="../assets/images/update-img/Grad Certify.png" width="162" height="50" alt="Grad Certify logo">
+          </a>
+
+          <p class="footer-brand-text">
+            At Grad Certify, we offer comprehensive online courses with expert instructors and cutting-edge curriculum, Grad Certify is the perfect choice for those serious about success in the tech industry.
+          </p>
+
+         <!-- <div class="wrapper">
+            <span class="span">Address:</span>
+
+            <address class="address"> B-Block, BHIVE Workspace - No.112, AKR Tech Park, "A" and, 7th Mile Hosur Rd, Krishna Reddy Industrial Area, Bengaluru, Karnataka- s560068</address>
+          </div> -->
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+917411464640" class="footer-link">+91 7411 464 640</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:support@Grad Certify.com" class="footer-link">support@Grad Certify.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Comapny</p>
+          </li>
+
+          <li>
+            <a href="../about-us.html" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="../job-guaranteed-courses.html" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="../policy/Privacy-Policy.html" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="../policy/terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="../policy/refund-cancellation-policy.html" class="footer-link">Refund/Cancellation policy</a>
+          </li>
+
+          <!--<li>-->
+          <!--  <a href="../policy/cancellation-policy" class="footer-link">Cancellation Policy</a>-->
+          <!--</li>-->
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="../contact-us.html" class="footer-link">Contact Us</a>
+          </li>
+
+            <li>
+            <a href="../instructors.html" class="footer-link">Instructor</a>
+          </li> 
+
+          <li>
+            <a href="../our-team.html" class="footer-link">Our Team</a>
+          </li>
+
+
+          <li>
+            <a href="https://Grad Certify.in/" class="footer-link">Blogs</a>
+          </li>
+
+          <!--<li>-->
+          <!--  <a href="../news-updates" class="footer-link">News</a>-->
+          <!--</li>-->
+          
+           <!--<li>
+            <a href="../current-openings.php" class="footer-link">Current Openings</a>
+          </li> -->
+
+          <li>
+            <a href="../faqs.html" class="footer-link">FAQs</a>
+          </li>
+          
+            <li>
+              <a
+                href="https://www.google.com/search?sca_esv=0e58669465c64ea2&amp;rlz=1C1CHBF_enIN1024IN1024&amp;sxsrf=AE3TifPDQXz4KGp_OPnFaNKkzY5IjuTYkA:1750921551557&amp;si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1oJ7PBp83PEWzfEE9P0MDjL0cfOCHY1-lOgc1vdWqwnRkzMJyy_fGEJbvyYLZ_huGqqZ7dewNNaquMeY9EO6NJbz-X9&amp;q=Grad Certify+Pvt+Ltd+Reviews&amp;sa=X&amp;ved=2ahUKEwiQwfCIw46OAxUPzTgGHQGjKBYQ0bkNegQINBAE&amp;cshid=1750921567441879&amp;biw=1536&amp;bih=695&amp;dpr=1.25#lrd=0x890b8701b2132843:0x20a4928ed3930407,3,,,,"
+                class="footer-link"
+                >Review Us</a
+              >
+            </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="#" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/company/Grad Certify-com/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <!--<li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li> -->
+
+            <li>
+              <a href="https://www.youtube.com/@Grad Certify-LeadwithSkills" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2025 All Rights Reserved by <a href="../index.html" class="copyright-link">Grad Certify</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="../../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="../../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Example JavaScript for handling subscriptions
+    document.querySelector('.subscribe button').addEventListener('click', () => {
+      const email = document.querySelector('.subscribe input').value;
+      if (email) {
+        alert(`Thank you for subscribing with ${email}!`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  </script>
+
+<!-- ======= SUBSCRIBE ============= -->
+ <script>
+        // Get elements
+        const form = document.getElementById('subscribeForm');
+        const popup = document.getElementById('popup');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const closePopup = document.getElementById('closePopup');
+        const popupMessage = document.getElementById('popupMessage');
+
+        // Handle form submission
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent page reload
+
+            // Get the email value
+            const email = document.getElementById('email').value;
+
+            // Send data to PHP using AJAX
+            fetch('subscribe.html', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `email=${encodeURIComponent(email)}`
+            })
+            .then(response => response.text())
+            .then(data => {
+                if (data.trim() === 'success') {
+                    popupMessage.textContent = 'Thank you for subscribing!';
+                } else {
+                    popupMessage.textContent = data;
+                }
+                popup.style.display = 'block';
+                popupOverlay.style.display = 'block';
+                form.reset();
+            })
+            .catch(error => {
+                popupMessage.textContent = 'An error occurred. Please try again.';
+                popup.style.display = 'block';
+                popupOverlay.style.display = 'block';
+            });
+        });
+
+        // Close popup
+        closePopup.addEventListener('click', function () {
+            popup.style.display = 'none';
+            popupOverlay.style.display = 'none';
+        });
+
+        popupOverlay.addEventListener('click', function () {
+            popup.style.display = 'none';
+            popupOverlay.style.display = 'none';
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from www.Grad Certify.com/blog-repository/machine-learning-applications-data-science by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 04:37:59 GMT -->
+</html>

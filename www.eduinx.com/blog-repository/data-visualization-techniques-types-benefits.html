@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.Grad Certify.com/blog-repository/data-visualization-techniques-types-benefits by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 04:38:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Data Visualization: Top Techniques, Types & Benefits Explained | Grad Certify Blog</title>
+  <meta name="title" content="Data Visualization: Techniques, Types & Benefits | Learn How to Transform Data">
+  <meta name="description" content="Discover data visualization techniques, types, and benefits that simplify complex data. Learn how to create compelling visual stories to make better decisions.">
+  <link rel="canonical" href="data-visualization-techniques-types-benefits.html" />
+
+
+   <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style1.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="../assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="../assets/images/hero-banner-1.html">
+  <link rel="preload" as="image" href="../assets/images/hero-banner-2.html">
+  <link rel="preload" as="image" href="../assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="../assets/images/hero-shape-2.png">
+
+  <style type="text/css">
+    .article-sec {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .article-hero {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-top: 70px;
+    }
+
+    .article-hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .article-hero .title-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .article-con {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .article-title {
+      font-size: 32px;
+      margin: 20px 0;
+      text-transform: capitalize;
+      font-family: Arial, sans-serif;
+      color: #000;
+
+
+    }
+
+    .article-content {
+      margin-bottom: 40px;
+      font-family: Arial, sans-serif;
+      color: #000;
+      font-size: 1.5rem;
+    }
+
+    .article-content h3{
+      font-size: 21px;
+    }
+    .article-content p{
+      font-size: 16px;
+    }
+
+
+    .article-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .article-author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .social-share {
+      gap: 10px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+      display: flex;
+
+    }
+
+    .social-share a {
+      text-decoration: none;
+      color: white;
+      background: #4285f4;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1rem;
+      text-align: center;
+      align-items: center;
+    }
+
+
+    .article-subscribe {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+
+    .article-subscribe input {
+      padding: 10px;
+      width: calc(100% - 40px);
+      max-width: 500px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .article-subscribe button {
+      padding: 10px 20px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+   .recommended {
+        padding: 0px;
+      }
+
+      .recommended h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #000;
+        font-family: sans-serif;
+      }
+
+      .recommended-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .recommended-card {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: #fff;
+      }
+
+      .recommended-image {
+        width: 300px;
+        height: 200px;
+      }
+
+      .recommended-content {
+        padding: 15px;
+      }
+
+      .recommended-content a h3:hover{
+        color: deepskyblue;
+      }
+
+      .recommended-title {
+        margin: 10px 0;
+        font-size: 21px;
+        color: #000;
+        font-family: sans-serif;
+      }
+
+      .recommended-description {
+        color: #666;
+      }
+
+    @media (max-width: 768px) {
+      .article-hero {
+        height: auto;
+        width: 100%;
+      }
+
+      .article-hero img{
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .article-hero .title-overlay {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+
+      .article-title {
+        font-size: 1.5rem;
+      }
+
+      .social-share a {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+      }
+
+      .article-author img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .article-subscribe input {
+        width: 100%;
+      }
+    }
+
+  /**================  **/
+  .article-subscribe {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 900px;
+        }
+
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+
+        .popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .popup .close-btn:hover {
+            color: red;
+        }
+
+        /* Background overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+  </style>
+
+
+</head>
+
+<body id="top">
+
+ <!-- =============== HEADER ================ -->
+
+   <header class="header" data-header>
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="auto" alt="Grad Certify logo">
+      </a>
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <a href="../index.html" class="logo">
+            <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="50" alt="Grad Certify logo">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../about-us.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../job-guaranteed-courses.html" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../milestone-achievers.html" class="navbar-link" data-nav-link>Our Milestone</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../all-blogs.html" class="navbar-link" data-nav-link>Blogs</a>
+          </li> 
+
+          <li>
+            <a href="../webinar.html" class="navbar-link" data-nav-link>Webinar</a>
+          </li>
+          
+           <li>
+            <a href="../elevateX.html" class="navbar-link" data-nav-link>ElevateX</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="../contact-us.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+          <!--<a href="https://wa.me/917411464640" target="_blank" class="btn has-before" style="background-color:blue;">Free Counseling</a>-->
+
+        <a href="../contact-us.html" class="btn has-before">
+          <span class="span">Apply Now</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+<!-- BODY -- ---------------------- -->
+<section class="article-sec">
+  <div class="article-hero">
+    <img src="../assets/images/articles/banner_8.png" alt="Data Visualization">
+    <!--<div class="title-overlay">Why Generative AI is the Game-Changer for Aspiring Data Scientists </div> -->
+  </div>
+
+  <div class="container article-con">
+    <h1 class="article-title">Data Visualization: Top Techniques, Types & Benefits Explained</h1>
+
+    <div class="article-content">
+<!-- ==  BLOG CONTENT ============ -->
+      <h3>Introduction</h3>
+      <p>Your boss has given you a task that involves the compilation of large data sets and converting them into a simpler and comprehensible form. What would you do? Compiling large data sets is very challenging as it involves hours of manual work and a thorough in-depth study of the data to compile and build a comprehensive report. If this is done manually, it could take several months and many resources will also be involved in this task. Another pressing concern is that there is also a lot of room for human error in the entire process. This daunting task can be completed with ease through the process of data visualization. Read on to know more.</p><br>
+
+      <h3>What is Data Visualization?</h3>
+      <p>Data visualization has the ability to translate complex data sets into visual formats that can be easily understood. The main objective is to ensure easy access to data and empower users to identify trends, patterns, and outliers quickly and efficiently. It makes your work a breeze as it enables you to process large data and break them down into simpler visual formats that are easier to understand. This data is represented as charts or graphs to support better understanding. There are different types and techniques involved in data visualization. </p><br>
+
+      <h3>Types of Data Visualization</h3>
+      <p>Data can be processed, sorted, and visualized in different ways. You can use generative AI and machine learning techniques to aid in processing and sorting voluminous data. Data can be organized in either a numerical way or a categorical way. In numerical data visualization, the age distribution of a certain group of people can be visualized using a pie chart or a bar graph. In categorical data visualization, the demographics of certain groups can be classified and categorized in the form of a bar graph or pie chart. These techniques give you a clear-cut picture of data, which is presented in a pictorial format. It helps data scientists to derive actionable insights and make decisions in a more informed manner. </p><br>
+
+      <h3>Data Visualization Techniques</h3>
+      <p>Before understanding different data visualization techniques, you need to have a clear picture of your audience, know who will be viewing your data, and frame your output according to their needs and expertise. Pay attention to the more critical aspects of your data and present it in a simple manner, it should neither be too complicated nor too fancy. Select a chart type that best fits your data set and communicates the message in a crisp manner. Do not forget to double-check the data to ensure that the representations are done correctly. There should be no room for any misrepresentations or inaccuracies. Arrange all the elements logically so that they can guide viewers appropriately and support interpretation. Make your representations accessible to all audiences by considering factors like color blindness, screen reader compatibility, and font size. Ensure to refine your visualizations based on feedback and changing trends continuously.</p><br><br>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+  <!-- Content Section -->
+      <div style="flex: 1; min-width: 300px;">
+        <h4>Histogram</h4>
+        <p>
+        A histogram is similar to a bar graph and is used to represent numerical data. Here, the bars are used to show the frequency of data points within specific intervals, enabling you to visualize the frequency distribution of a set of continuous data. A histogram is widely used in displaying the age distribution of a population. They are easy to interpret, enabling viewers to derive a conclusion with ease. Histograms are widely used in the healthcare industry to display patient age distributions, helping in resource planning for different age groups.
+        </p>
+      </div>
+
+  <!-- Image Section -->
+      <div style="flex: 1; min-width: 300px; text-align: center;">
+        <img src="../assets/images/articles/histogram.png" alt="Histogram" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+    <br>
+    <h4>Heatmaps</h4>
+    <p>Heatmaps represent data where individual values contained in a matrix are represented as colors. It is used to display the density or intensity of data points in a two-dimensional space and is applicable for geographic locations or the correlation between variables. It helps in the visual representation of data density and is excellent for showing correlations. For instance, a heatmap can be used on a website to showcase user engagement. However, at times, it could overwhelm the viewer with too much data. Heatmaps are typically used in UI/UX design to analyze customer behaviour on websites and improve the design based on user interaction.</p><br>
+    <center> <img src="../assets/images/articles/heatmap.png" alt="Histogram" style="max-width: 100%; height: auto;"></center><br>
+
+    <h4>Line Chart</h4>
+    <p>Line Charts are the most widely used data visualization techniques. These charts present data in a graphical manner and can be used to inform users of trends and patterns in a crystal clear manner. These charts showcase scatter plots that depict the relationship between two variables. They are used to show the yearly/monthly profits of individuals over time. Line Charts are widely used in tracking stock prices over a period of time. Corporates use line charts to track financial metrics for better decision-making.</p><br>
+    <center> <img src="../assets/images/articles/line-chart.png" alt="Line Chart" style="max-width: 100%; height: auto;"></center><br>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+  <!-- Content Section -->
+      <div style="flex: 1; min-width: 300px;">
+        <h4>Bar Graph</h4>
+        <p>
+        Also known as a bar chart, a bar graph uses rectangular bars to represent data. It is used to compare two or more categories or groups of data. They are used in various businesses to compare annual sales across different areas. They are simple to use and quite versatile in handling various data types. However, they are not effective for representing larger data sets. The education industry uses bar graphs to compare student performance across different subjects which helps teachers to identify areas for improvement. 
+        </p>
+      </div>
+
+  <!-- Image Section -->
+      <div style="flex: 1; min-width: 300px; text-align: center;">
+        <img src="../assets/images/articles/bar-graph.png" alt="Bar Graph" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+    <br>
+
+    <h4>Pie chart</h4>
+    <p>Pie charts are circular statistical graphs that represent data in slices. It is widely used to represent market share distribution and gives you a proportionate understanding of the market. However, they are harder to compare small segments. </p><br>
+    <center> <img src="../assets/images/articles/pai-chart.png" alt="Line Chart" style="max-width: 100%; height: auto;"></center><br> <br>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+  <!-- Content Section -->
+      <div style="flex: 1; min-width: 300px;">
+        <h4>Tree map</h4>
+        <p>A tree map can be used to represent hierarchical data using nested rectangles where each brand of the hierarchy is represented by a colored rectangle with smaller rectangles that represent sub-branches. Here, every rectangle is proportional to the data that it represents. They are used to represent a company’s budget and are good to showcase relationships. However, they can be complex to interpret as they contain too many levels. Treemaps are used in corporate organizations to break down investment portfolios by asset class and give a clear picture of asset distribution. </p>
+      </div><br>
+
+  <!-- Image Section -->
+      <div style="flex: 1; min-width: 300px; text-align: center;">
+        <img src="../assets/images/articles/tree-map.png" alt="Bar Graph" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+    <br><br>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+  <!-- Content Section -->
+      <div style="flex: 1; min-width: 300px;">
+        <h4>Funnel chart</h4>
+        <p>What would you do if you needed to showcase the process flow and drop off data points through each stage? A funnel chart is the ideal option that will help you represent various stages in a process, this makes it easy to visualize conversion rates and bottlenecks. They are commonly used to depict sales pipeline stages to closed sales. Funnel charts can also be used to track the customer journey from initial contact to purchase which helps marketers to improve their sales strategy. The only downside to a funnel chart is that it is limited to data with clear progression and cannot be used in presenting a complex process. </p>
+      </div><br>
+
+       <!-- Image Section -->
+      <div style="flex: 1; min-width: 300px; text-align: center;">
+        <img src="../assets/images/articles/Funnel-chart.png" alt="Funnel Chart" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+    <br>
+
+    <h4>Gauge chart</h4>
+    <p>As the name suggests, a gauge chart is like a speedometer that displays data in a dial format. What would you do if you were given a task to represent a single data point as a progress to a specific goal? If you use a gauge chart, you can measure and visualize performance or progress towards a specific goal. Here, the needle can be used to indicate the current value against a predefined threshold. Gauge charts are widely used in human resources to display key performance indicators. They are also used in the manufacturing industry to monitor the performance metrics of machinery to ensure optimum maintenance. The limitation is that they are confined to single data points. </p>
+    <center> <img src="../assets/images/articles/Gauge-chart.png" alt="Gauge Chart" style="max-width: 100%; height: auto;"></center><br>
+    <p>MS Office, Google Analytics, and other similar data visualization tools are widely used in creating these charts. They can also be integrated with generative AI and machine learning algorithms to produce optimal results.</p><br>
+
+    <h3>How to Choose the Right Visualization Technique?</h3>
+    <p>Once you have your data sorted, you need to select the right visualization technique to represent the data in a convincing manner. The representation should be such that it helps viewers to get a clear picture and help in influencing their decisions effectively. You can start by analyzing the data type, whether it is numerical, temporal, or categorical. Get a clear understanding of the audience’s goals and visualization and analyze the data volume. If you have a large data set, you need to use histograms. For small datasets scatter plots or line graphs will suffice. </p><br>
+
+    <p>Ensure that the visualization is simple and conveys all the required information. You must never overload the user with too much information as it could obscure the core message. Another quick tip is to use interactive visualizations on digital platforms to enhance user engagement and support deep data exploration. Make sure to use generative AI and machine learning functionalities while compiling data as it will help you achieve data visualization goals faster. </p> <br>
+
+    <h3>Key Advantages of Data Visualization</h3>
+    <p>Data visualization simplifies large and complex data sets, enhances data interpretation, saves time in analysis, improves communication, and establishes a medium to convey a story through data. Most importantly, it supports faster decision-making and can be used in workshops and training modules to help learners understand concepts faster. Data visualization can help companies to enhance their profit margins and make investment decisions with clear insights.</p><br>
+
+    <p>In today’s competitive market, it is vital to learn data science with generative AI and machine learning. Whether you are a fresher or a working professional, taking up a data science with generative AI course is the need of the hour to stay relevant in the market. Grad Certify, a renowned institute in the edutech space, offers a data science with generative AI course that helps you perform advanced data visualization, and leverage generative AI in data analytics applications. They also offer 360-degree career support and help you apply your learnings by performing real-time capstone projects. For more support, you can reach out to <a href="../contact-us-2.html" style="display: inline; color: deepskyblue;">Grad Certify</a> and get more information on their course.</p><br>
+
+
+
+
+      
+      
+
+      <!-- ================ REFERENCE ============== -->
+
+      <h3>Reference links:</h3>
+      <p style="color:deepskyblue; font-size: 14px;">
+        <a href="https://www.geeksforgeeks.org/data-visualization-and-its-importance/" target="_blank">https://www.geeksforgeeks.org/data-visualization-and-its-importance/</a>
+
+        <a href="https://vlinkinfo.com/blog/10-data-visualization-techniques-to-derive-business-insights/" target="_blank">https://vlinkinfo.com/blog/10-data-visualization-techniques-to-derive-business-insights/</a>
+      </p>
+      
+    </div>
+<!-- ============ AUTHOR DETAILS ============== -->
+    <div class="article-author">
+      <img src="../assets/images/articles/author/Akassh_Vijay.jpg" alt="Akassh Vijay">
+      <div>
+        <h3>Akassh Vijay</h3>
+        <p> <a href="https://www.linkedin.com/in/akassh-vijay-b4548483/" target="_blank" style="color: deepskyblue;">LinkedIn</a> </p>
+      </div>
+    </div>
+<!-- ========= SOCIAL SHARE ================ -->
+    <h4 style="font-family: sans-serif; color:#000;">Share on Social Platform:</h4>
+    <div class="social-share">
+      <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" target="_blank"><i class="fab fa-facebook-f" style="font-size: 18px; "></i></a>
+      <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" target="_blank"><i class="fab fa-instagram" style="font-size: 18px; "></i></a>
+      <a href="https://www.linkedin.com/company/Grad Certify-com/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 18px; "></i></a>
+    </div>
+
+<!-- ============== SUBSCRIBE ================== -->
+     <div class="article-subscribe">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscribeForm">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <center><button type="submit">Subscribe</button></center>
+        </form>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="popup">
+        <button class="close-btn" id="closePopup">&times;</button>
+        <p id="popupMessage"></p>
+    </div>
+<!-- ========  RECOMMENDED ============== -->
+   <div class="recommended">
+      <h2>Recommended Articles</h2>
+      <div class="recommended-container">
+
+        <div class="recommended-card">
+          <img src="../assets/images/articles/article_4.png" alt="Advanced Machine Learning Fundamentals in Data Analytics" class="recommended-image">
+          <div class="recommended-content">
+            <a href="advanced-machine-learning-fundamentals-data-analytics.html"><h3 class="recommended-title">4 Advanced Machine Learning Fundamentals in Data Analytics that you Need to Know</h3></a> 
+            <p class="recommended-description">Data analytics and machine learning go hand in glove.</p>
+          </div>
+        </div>
+<!-- ===================================== -->
+        <div class="recommended-card">
+          <img src="../assets/images/articles/article_3.png" alt="AI and its Impact on Jobs" class="recommended-image">
+          <div class="recommended-content">
+            <a href="ai-revolution-in-education.html"> <h3 class="recommended-title">7 Ways How AI Has Revolutionized Education</h3></a>
+            <p class="recommended-description">Did you know that by 2032, the education sector’s generative AI market is estimated to exceed</p>
+          </div>
+        </div>
+<!-- ================================================== -->
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    </article>
+  </main>
+  
+<!-- -------BODY END -------------------------- -->
+
+<!-- =============== FOOTER ================ -->
+
+ 
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('../assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href=" " class="logo">
+            <img src="../assets/images/update-img/Grad Certify.png" width="162" height="50" alt="Grad Certify logo">
+          </a>
+
+          <p class="footer-brand-text">
+            At Grad Certify, we offer comprehensive online courses with expert instructors and cutting-edge curriculum, Grad Certify is the perfect choice for those serious about success in the tech industry.
+          </p>
+
+         <!-- <div class="wrapper">
+            <span class="span">Address:</span>
+
+            <address class="address"> B-Block, BHIVE Workspace - No.112, AKR Tech Park, "A" and, 7th Mile Hosur Rd, Krishna Reddy Industrial Area, Bengaluru, Karnataka- s560068</address>
+          </div> -->
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+917411464640" class="footer-link">+91 7411 464 640</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:support@Grad Certify.com" class="footer-link">support@Grad Certify.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Comapny</p>
+          </li>
+
+          <li>
+            <a href="../about-us.html" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="../job-guaranteed-courses.html" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="../policy/Privacy-Policy.html" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="../policy/terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="../policy/refund-cancellation-policy.html" class="footer-link">Refund/Cancellation policy</a>
+          </li>
+
+          <!--<li>-->
+          <!--  <a href="../policy/cancellation-policy" class="footer-link">Cancellation Policy</a>-->
+          <!--</li>-->
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="../contact-us.html" class="footer-link">Contact Us</a>
+          </li>
+
+            <li>
+            <a href="../instructors.html" class="footer-link">Instructor</a>
+          </li> 
+
+          <li>
+            <a href="../our-team.html" class="footer-link">Our Team</a>
+          </li>
+
+
+          <li>
+            <a href="../all-blogs.html" class="footer-link">Blogs</a>
+          </li>
+
+          <!--<li>-->
+          <!--  <a href="../news-updates" class="footer-link">News</a>-->
+          <!--</li>-->
+          
+           <!--<li>
+            <a href="../current-openings.php" class="footer-link">Current Openings</a>
+          </li> -->
+
+          <li>
+            <a href="../faqs.html" class="footer-link">FAQs</a>
+          </li>
+          
+            <li>
+              <a
+                href="https://www.google.com/search?sca_esv=0e58669465c64ea2&amp;rlz=1C1CHBF_enIN1024IN1024&amp;sxsrf=AE3TifPDQXz4KGp_OPnFaNKkzY5IjuTYkA:1750921551557&amp;si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1oJ7PBp83PEWzfEE9P0MDjL0cfOCHY1-lOgc1vdWqwnRkzMJyy_fGEJbvyYLZ_huGqqZ7dewNNaquMeY9EO6NJbz-X9&amp;q=Grad Certify+Pvt+Ltd+Reviews&amp;sa=X&amp;ved=2ahUKEwiQwfCIw46OAxUPzTgGHQGjKBYQ0bkNegQINBAE&amp;cshid=1750921567441879&amp;biw=1536&amp;bih=695&amp;dpr=1.25#lrd=0x890b8701b2132843:0x20a4928ed3930407,3,,,,"
+                class="footer-link"
+                >Review Us</a
+              >
+            </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="#" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/company/Grad Certify-com/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <!--<li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li> -->
+
+            <li>
+              <a href="https://www.youtube.com/@Grad Certify-LeadwithSkills" class="social-link" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2025 All Rights Reserved by <a href="../index.html" class="copyright-link">Grad Certify</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="../../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="../../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Example JavaScript for handling subscriptions
+    document.querySelector('.subscribe button').addEventListener('click', () => {
+      const email = document.querySelector('.subscribe input').value;
+      if (email) {
+        alert(`Thank you for subscribing with ${email}!`);
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  </script>
+
+<!-- ======= SUBSCRIBE ============= -->
+ <script>
+        // Get elements
+        const form = document.getElementById('subscribeForm');
+        const popup = document.getElementById('popup');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const closePopup = document.getElementById('closePopup');
+        const popupMessage = document.getElementById('popupMessage');
+
+        // Handle form submission
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent page reload
+
+            // Get the email value
+            const email = document.getElementById('email').value;
+
+            // Send data to PHP using AJAX
+            fetch('subscribe.html', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `email=${encodeURIComponent(email)}`
+            })
+            .then(response => response.text())
+            .then(data => {
+                if (data.trim() === 'success') {
+                    popupMessage.textContent = 'Thank you for subscribing!';
+                } else {
+                    popupMessage.textContent = data;
+                }
+                popup.style.display = 'block';
+                popupOverlay.style.display = 'block';
+                form.reset();
+            })
+            .catch(error => {
+                popupMessage.textContent = 'An error occurred. Please try again.';
+                popup.style.display = 'block';
+                popupOverlay.style.display = 'block';
+            });
+        });
+
+        // Close popup
+        closePopup.addEventListener('click', function () {
+            popup.style.display = 'none';
+            popupOverlay.style.display = 'none';
+        });
+
+        popupOverlay.addEventListener('click', function () {
+            popup.style.display = 'none';
+            popupOverlay.style.display = 'none';
+        });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from www.Grad Certify.com/blog-repository/data-visualization-techniques-types-benefits by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 04:38:02 GMT -->
+</html>
