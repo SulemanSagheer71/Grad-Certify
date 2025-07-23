@@ -1176,8 +1176,8 @@ img {
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 70px;
   margin-bottom: var(--space-2xl);
 }
 
