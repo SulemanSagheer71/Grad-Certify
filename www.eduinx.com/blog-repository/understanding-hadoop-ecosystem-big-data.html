@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from www.Grad Certify.com/blog-repository/understanding-hadoop-ecosystem-big-data by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 04:37:50 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +16,14 @@
   -->
   <title>Understanding the Hadoop Ecosystem In Big Data | Grad Certify Blog</title>
   <meta name="title" content="Understanding the Hadoop Ecosystem in Big Data | Key Components & Benefits">
-  <meta name="description" content="Discover the Hadoop ecosystem in Big Data, its key components like HDFS, MapReduce, and YARN, and how it helps process large-scale data efficiently. Learn more!">
+  <meta name="description"
+    content="Discover the Hadoop ecosystem in Big Data, its key components like HDFS, MapReduce, and YARN, and how it helps process large-scale data efficiently. Learn more!">
 
   <link rel="canonical" href="understanding-hadoop-ecosystem-big-data.html" />
 
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 
@@ -51,7 +56,7 @@
   <link rel="preload" as="image" href="../assets/images/hero-shape-1.svg">
   <link rel="preload" as="image" href="../assets/images/hero-shape-2.png">
 
-<style type="text/css">
+  <style type="text/css">
     .article-sec {
       font-family: Arial, sans-serif;
       line-height: 1.6;
@@ -113,10 +118,11 @@
       font-size: 1.5rem;
     }
 
-    .article-content h3{
+    .article-content h3 {
       font-size: 21px;
     }
-    .article-content p{
+
+    .article-content p {
       font-size: 16px;
     }
 
@@ -184,54 +190,54 @@
       cursor: pointer;
     }
 
-   .recommended {
-        padding: 0px;
-      }
+    .recommended {
+      padding: 0px;
+    }
 
-      .recommended h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: #000;
-        font-family: sans-serif;
-      }
+    .recommended h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #000;
+      font-family: sans-serif;
+    }
 
-      .recommended-container {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
+    .recommended-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-      .recommended-card {
-        width: 300px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        background-color: #fff;
-      }
+    .recommended-card {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: #fff;
+    }
 
-      .recommended-image {
-        width: 300px;
-        height: 200px;
-      }
+    .recommended-image {
+      width: 300px;
+      height: 200px;
+    }
 
-      .recommended-content {
-        padding: 15px;
-      }
+    .recommended-content {
+      padding: 15px;
+    }
 
-      .recommended-content a h3:hover{
-        color: deepskyblue;
-      }
+    .recommended-content a h3:hover {
+      color: deepskyblue;
+    }
 
-      .recommended-title {
-        margin: 10px 0;
-        font-size: 21px;
-        color: #000;
-        font-family: sans-serif;
-      }
+    .recommended-title {
+      margin: 10px 0;
+      font-size: 21px;
+      color: #000;
+      font-family: sans-serif;
+    }
 
-      .recommended-description {
-        color: #666;
-      }
+    .recommended-description {
+      color: #666;
+    }
 
     @media (max-width: 768px) {
       .article-hero {
@@ -239,7 +245,7 @@
         width: 100%;
       }
 
-      .article-hero img{
+      .article-hero img {
         height: auto;
         width: 100%;
         margin-top: 20px;
@@ -254,9 +260,9 @@
         font-size: 18px;
       }
 
-      .article-content h3{
-      font-size: 16px;
-    }
+      .article-content h3 {
+        font-size: 16px;
+      }
 
       .social-share a {
         padding: 8px 12px;
@@ -275,75 +281,75 @@
       }
     }
 
-  /**================  **/
-  .article-subscribe {
-            text-align: center;
-            margin: 50px auto;
-            max-width: 900px;
-        }
+    /**================  **/
+    .article-subscribe {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 900px;
+    }
 
-        input[type="email"] {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+    input[type="email"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
 
-        button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 30%;
-        }
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 30%;
+    }
 
-        button:hover {
-            background-color: #0056b3;
-        }
+    button:hover {
+      background-color: #0056b3;
+    }
 
-        /* Popup styles */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            z-index: 1000;
-        }
+    /* Popup styles */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      z-index: 1000;
+    }
 
-        .popup .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 20px;
-            color: #333;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
+    .popup .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #333;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
 
-        .popup .close-btn:hover {
-            color: red;
-        }
+    .popup .close-btn:hover {
+      color: red;
+    }
 
-        /* Background overlay */
-        .popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
+    /* Background overlay */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
   </style>
 
 
@@ -352,17 +358,19 @@
 
 <body id="top">
 
- <!-- =============== HEADER ================ -->
+  <!-- =============== HEADER ================ -->
 
-   <header class="header" data-header>
+  <header class="header" data-header>
     <div class="container">
       <a href="../index.html" class="logo">
-        <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="auto" alt="Grad Certify logo">
+        <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="auto"
+          alt="Grad Certify logo">
       </a>
       <nav class="navbar" data-navbar>
         <div class="wrapper">
           <a href="../index.html" class="logo">
-            <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="50" alt="Grad Certify logo">
+            <img src="../assets/images/update-img/Grad Certify B logo.png" width="162" height="50"
+              alt="Grad Certify logo">
           </a>
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -383,19 +391,19 @@
             <a href="../job-guaranteed-courses.html" class="navbar-link" data-nav-link>Courses</a>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <a href="../milestone-achievers.html" class="navbar-link" data-nav-link>Our Milestone</a>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <a href="https://Grad Certify.in/" class="navbar-link" data-nav-link>Blogs</a>
-          </li> 
+          </li>
+
+          <!-- <li>
+            <a href="../webinar.html" class="navbar-link" data-nav-link>Webinar</a>
+          </li> -->
 
           <li>
-            <a href="../webinar.html" class="navbar-link" data-nav-link>Webinar</a>
-          </li>
-          
-           <li>
             <a href="../elevateX.html" class="navbar-link" data-nav-link>ElevateX</a>
           </li>
 
@@ -408,7 +416,7 @@
       </nav>
 
       <div class="header-actions">
-          <!--<a href="https://wa.me/917411464640" target="_blank" class="btn has-before" style="background-color:blue;">Free Counseling</a>-->
+        <!--<a href="https://wa.me/917411464640" target="_blank" class="btn has-before" style="background-color:blue;">Free Counseling</a>-->
 
         <a href="../contact-us.html" class="btn has-before">
           <span class="span">Apply Now</span>
@@ -426,141 +434,221 @@
 
     </div>
   </header>
-<!-- BODY -- ---------------------- -->
-<section class="article-sec">
-  <div class="article-hero">
-    <img src="../assets/images/articles/banner_15.png" alt="Understanding the Hadoop Ecosystem in Big Data">
-    <!--<div class="title-overlay">Why Generative AI is the Game-Changer for Aspiring Data Scientists </div> -->
-  </div>
-
-  <div class="container article-con">
-    <h1 class="article-title">Understanding the Hadoop Ecosystem In Big Data</h1>
-
-    <div class="article-content">
-<!-- ==  BLOG CONTENT ============ -->
-      <h3>Introduction</h3>
-      <p>As one of the key tools used by organizations to store and analyze data, the Hadoop ecosystem is used to assist companies in developing applications. It is the best framework to store data and is the right option for enterprise-level companies that deal with large data. As a data science engineer or a fresher who is looking to start a career in data science, having a clear understanding of the Hadoop ecosystem in Big Data is pivotal to being an established data scientist and ensuring your growth in the industry.</p><br>
-      <p>Due to the heavy competition in today’s corporate landscape, professionals need to constantly update themselves with the right skill set to thrive in the market. Having a good understanding of Hadoop, Big Data, and generative AI is sure to put you on a higher pedestal in the hiring market. You can also land better jobs as there is a lot of demand for data science professionals with sound knowledge of gen AI, Hadoop, and Python. Learn the Hadoop ecosystem in Big Data in this blog and strengthen your skills. </p><br>
-
-      <h4>This blog covers the following topics:</h4>
-      <ul>
-        <li>&nbsp ● What is the Hadoop Ecosystem?</li>
-        <li>&nbsp ● Hadoop Ecosystem for Big Data</li>
-        <li>&nbsp ● Architecture of a Hadoop Ecosystem</li>
-        <li>&nbsp ● Tools and Frameworks Used in the Ecosystem</li>
-        <li>&nbsp ● Unique Features of the Ecosystem</li>
-      </ul>
-
-      <h3>What is the Hadoop Ecosystem?</h3>
-      <p>As defined earlier, Hadoop is a software framework that allows users to store and process large data on a cluster of computers. It comprises two distinct parts namely, Hadoop Distributed File System (HDFS), and MapReduce. HDFS is used in large corporations as it allows users to store large data across many servers in a distributed manner. This ensures fast and easy access via requests from clients or applications. MapReduce is a unique programming model that can break down big data into smaller chunks and enables parallel processing. </p><br>
-      <p>The Hadoop ecosystem is a collection of tools, frameworks, and libraries that help data science engineers to build applications on top of Apache Hadoop. It is best suited to address Big Data problems as it supports massive parallelism with low latency and high throughput. The Apache Hadoop ecosystem can be used with other frameworks like Spark or Kafka for real time processing or machine learning applications. </p><br>
-
-      <h3>Hadoop Ecosystem for Big Data</h3>
-      <p>Did you know that Hadoop has several tools that work together to analyze and process large data? As an open-source framework, its architecture is based on widely distributed systems such as MapReduce, Pig, and Hive. MapReduce divides data inputs into small pieces, distributes them across many machines in the cluster, and combines the output from all machines into one file. This makes it the most preferred method for companies to process large data sets in one go. The output can also be run through gen AI to produce the desired data points for making the right decision. </p><br>
-      <p>Pig is another special tool that can write scripts in Pig Latin language, which can be used in querying large datasets stored in the Hadoop Distributed File System (HDFS). If an organization is accustomed to SQL databases, it can use Hive to store data in tables to those that are already present in SQL databases. However, it is stored as files on HDFS rather than being stored in Relational Database Management Systems (RDBMS).</p><br>
-      <h3>Architecture of a Hadoop Ecosystem</h3>
-      <p>The Hadoop ecosystem in Big Data comprises four core components which are data storage, data processing, data access, and data management. Firstly, all raw data is stored on a local hard drive or on the cloud. In data processing, the data is analyzed and transformed into meaningful insights for further analysis. Data access is the third phase of the Hadoop ecosystem. Here, tools like Pig or Hive are used to query data sets, filter out specific rows, and sort them into certain columns or values. In the last phase of the Hadoop ecosystem architecture, all processed data is stored safely and can be recalled whenever required. This ensures optimum data management. </p><br>
-      <center> <img src="../assets/images/articles/hadoop-ecosystem.png" alt="Hadoop Ecosystem" style="max-width: 100%; height: auto;"></center><br>
-      <h3>Tools and Frameworks Used in the Ecosystem</h3>
-      <p>The Hadoop ecosystem is highly versatile in terms of incorporating tools as it supports many tools for data processing and analysis. Some tools are used in collecting data from various sources whereas others are used to store and analyze data. Here are a few important tools used in the Hadoop ecosystem.</p><br>
-      <p>When it comes to workflow monitoring, Oozie is an optimum management system that enables users to monitor and control workflows. This can be used to automate tasks for system administration, debugging, and data processing. If you have high-performance computing clusters and are looking for an open-source distributed monitoring system, Chukwa is the one for you. This tool collected data from Hadoop Distributed File System (HDFS), YARN, and MapReduce. It has a web interface that provides a holistic view of data collected by Chukwa agents. </p><br>
-      <p>Flume is an open source distributed log collection that stores log events from web servers or application servers into HDFS or other related systems. Zookeepeer is an optimum management tool that aids in managing configuration, synchronizing data, and service discovery functions of Hadoop clusters.</p><br>
-      <p>Did you know that there is a data warehouse system for Hadoop that allows users to query data using SQL? Hive is a system that is used to create and modify tables, and views, and grant privileges to users. As a high-level language for writing data transformation programs, Pig is used to express data analysis. These programs are compiled into MapReduce jobs that run on the Hadoop infrastructure. </p><br>
-      <p>MapReduce is a popular programming model that is used to process and manage large datasets. Map Phase and Reduce phase are used in MapReduce. Map Phase is used to divide input data into chunks and process it parallelly. The Reduce phase is where each group of intermediate key value pairs is passed to a reducer that processes the final output based on values in the group. </p><br>
-      <h4>Frameworks used in the Hadoop Ecosystem </h4>
-      <p>With an ever-growing collection of tools, add-ons, and libraries, the Hadoop ecosystem is used to build applications on top of the Apache Hadoop platform. Apache Avro framework allows data science engineers to input data once and read it anywhere. This means that you do not have to worry about translating data into different formats, while moving it between other systems. Thrift is an RPC framework for writing services in programming languages like C++ or Java. This can help you communicate across languages and platforms. This framework helps you write code on one platform and run it on any other platform without having to rewrite it. </p><br>
-      <h3>Unique Features of the Ecosystem</h3>
-      <p>Hadoop is a free and open-source software that enables data science professionals to process large datasets in a distributed manner. It is built with Java and can be used as commodity hardware. It can be used for large datasets which can be scaled to handle multiple terabytes of data. Linux servers, network switches, and hard drives are the components of a Hadoop ecosystem. These components can be purchased from any vendor at an affordable price. One of the unique features of Hadoop is its ability to store large unstructured data, which cannot be done on traditional SQL databases.</p><br>
-      <p>Are you an aspiring data science engineer looking to get updated and upskill your career? Learn <a href="../courses/data-science-with-generative-ai.html" style="display: inline; color: deepskyblue;">data science with generative AI course</a> at Grad Certify. With a team of in-house experts who have over 10 years of industry-relevant experience, you can get the best guidance from Grad Certify. They offer a virtual classroom learning experience which encompasses practical applications and capstone projects. Get in touch with <a href="../contact-us-2.html" style="display: inline; color: deepskyblue;">Grad Certify</a> for more information on the course. </p><br>
- 
-      
-  
-
-      <!-- ================ REFERENCE ============== -->
-
-      <h3>Reference links:</h3>
-      <p style="color:deepskyblue; font-size: 14px;">
-        <a href="https://www.upgrad.com/blog/hadoop-ecosystem-components/">https://www.upgrad.com/blog/hadoop-ecosystem-components/</a>
-        <a href="https://www.linkedin.com/pulse/hadoop-ecosystem-components-smriti-saini/">https://www.linkedin.com/pulse/hadoop-ecosystem-components-smriti-saini/</a>
-        <a href="https://www.geeksforgeeks.org/hadoop-ecosystem/">https://www.geeksforgeeks.org/hadoop-ecosystem/</a>
-      </p>
-      
+  <!-- BODY -- ---------------------- -->
+  <section class="article-sec">
+    <div class="article-hero">
+      <img src="../assets/images/articles/banner_15.png" alt="Understanding the Hadoop Ecosystem in Big Data">
+      <!--<div class="title-overlay">Why Generative AI is the Game-Changer for Aspiring Data Scientists </div> -->
     </div>
-<!-- ============ AUTHOR DETAILS ============== -->
-    <div class="article-author">
-      <img src="../assets/images/articles/author/Akassh_Vijay.jpg" alt="Akassh Vijay">
-      <div>
-        <h3>Akassh Vijay</h3>
-        <p> <a href="https://www.linkedin.com/in/akassh-vijay-b4548483/" target="_blank" style="color: deepskyblue;">LinkedIn</a> </p>
+
+    <div class="container article-con">
+      <h1 class="article-title">Understanding the Hadoop Ecosystem In Big Data</h1>
+
+      <div class="article-content">
+        <!-- ==  BLOG CONTENT ============ -->
+        <h3>Introduction</h3>
+        <p>As one of the key tools used by organizations to store and analyze data, the Hadoop ecosystem is used to
+          assist companies in developing applications. It is the best framework to store data and is the right option
+          for enterprise-level companies that deal with large data. As a data science engineer or a fresher who is
+          looking to start a career in data science, having a clear understanding of the Hadoop ecosystem in Big Data is
+          pivotal to being an established data scientist and ensuring your growth in the industry.</p><br>
+        <p>Due to the heavy competition in today’s corporate landscape, professionals need to constantly update
+          themselves with the right skill set to thrive in the market. Having a good understanding of Hadoop, Big Data,
+          and generative AI is sure to put you on a higher pedestal in the hiring market. You can also land better jobs
+          as there is a lot of demand for data science professionals with sound knowledge of gen AI, Hadoop, and Python.
+          Learn the Hadoop ecosystem in Big Data in this blog and strengthen your skills. </p><br>
+
+        <h4>This blog covers the following topics:</h4>
+        <ul>
+          <li>&nbsp ● What is the Hadoop Ecosystem?</li>
+          <li>&nbsp ● Hadoop Ecosystem for Big Data</li>
+          <li>&nbsp ● Architecture of a Hadoop Ecosystem</li>
+          <li>&nbsp ● Tools and Frameworks Used in the Ecosystem</li>
+          <li>&nbsp ● Unique Features of the Ecosystem</li>
+        </ul>
+
+        <h3>What is the Hadoop Ecosystem?</h3>
+        <p>As defined earlier, Hadoop is a software framework that allows users to store and process large data on a
+          cluster of computers. It comprises two distinct parts namely, Hadoop Distributed File System (HDFS), and
+          MapReduce. HDFS is used in large corporations as it allows users to store large data across many servers in a
+          distributed manner. This ensures fast and easy access via requests from clients or applications. MapReduce is
+          a unique programming model that can break down big data into smaller chunks and enables parallel processing.
+        </p><br>
+        <p>The Hadoop ecosystem is a collection of tools, frameworks, and libraries that help data science engineers to
+          build applications on top of Apache Hadoop. It is best suited to address Big Data problems as it supports
+          massive parallelism with low latency and high throughput. The Apache Hadoop ecosystem can be used with other
+          frameworks like Spark or Kafka for real time processing or machine learning applications. </p><br>
+
+        <h3>Hadoop Ecosystem for Big Data</h3>
+        <p>Did you know that Hadoop has several tools that work together to analyze and process large data? As an
+          open-source framework, its architecture is based on widely distributed systems such as MapReduce, Pig, and
+          Hive. MapReduce divides data inputs into small pieces, distributes them across many machines in the cluster,
+          and combines the output from all machines into one file. This makes it the most preferred method for companies
+          to process large data sets in one go. The output can also be run through gen AI to produce the desired data
+          points for making the right decision. </p><br>
+        <p>Pig is another special tool that can write scripts in Pig Latin language, which can be used in querying large
+          datasets stored in the Hadoop Distributed File System (HDFS). If an organization is accustomed to SQL
+          databases, it can use Hive to store data in tables to those that are already present in SQL databases.
+          However, it is stored as files on HDFS rather than being stored in Relational Database Management Systems
+          (RDBMS).</p><br>
+        <h3>Architecture of a Hadoop Ecosystem</h3>
+        <p>The Hadoop ecosystem in Big Data comprises four core components which are data storage, data processing, data
+          access, and data management. Firstly, all raw data is stored on a local hard drive or on the cloud. In data
+          processing, the data is analyzed and transformed into meaningful insights for further analysis. Data access is
+          the third phase of the Hadoop ecosystem. Here, tools like Pig or Hive are used to query data sets, filter out
+          specific rows, and sort them into certain columns or values. In the last phase of the Hadoop ecosystem
+          architecture, all processed data is stored safely and can be recalled whenever required. This ensures optimum
+          data management. </p><br>
+        <center> <img src="../assets/images/articles/hadoop-ecosystem.png" alt="Hadoop Ecosystem"
+            style="max-width: 100%; height: auto;"></center><br>
+        <h3>Tools and Frameworks Used in the Ecosystem</h3>
+        <p>The Hadoop ecosystem is highly versatile in terms of incorporating tools as it supports many tools for data
+          processing and analysis. Some tools are used in collecting data from various sources whereas others are used
+          to store and analyze data. Here are a few important tools used in the Hadoop ecosystem.</p><br>
+        <p>When it comes to workflow monitoring, Oozie is an optimum management system that enables users to monitor and
+          control workflows. This can be used to automate tasks for system administration, debugging, and data
+          processing. If you have high-performance computing clusters and are looking for an open-source distributed
+          monitoring system, Chukwa is the one for you. This tool collected data from Hadoop Distributed File System
+          (HDFS), YARN, and MapReduce. It has a web interface that provides a holistic view of data collected by Chukwa
+          agents. </p><br>
+        <p>Flume is an open source distributed log collection that stores log events from web servers or application
+          servers into HDFS or other related systems. Zookeepeer is an optimum management tool that aids in managing
+          configuration, synchronizing data, and service discovery functions of Hadoop clusters.</p><br>
+        <p>Did you know that there is a data warehouse system for Hadoop that allows users to query data using SQL? Hive
+          is a system that is used to create and modify tables, and views, and grant privileges to users. As a
+          high-level language for writing data transformation programs, Pig is used to express data analysis. These
+          programs are compiled into MapReduce jobs that run on the Hadoop infrastructure. </p><br>
+        <p>MapReduce is a popular programming model that is used to process and manage large datasets. Map Phase and
+          Reduce phase are used in MapReduce. Map Phase is used to divide input data into chunks and process it
+          parallelly. The Reduce phase is where each group of intermediate key value pairs is passed to a reducer that
+          processes the final output based on values in the group. </p><br>
+        <h4>Frameworks used in the Hadoop Ecosystem </h4>
+        <p>With an ever-growing collection of tools, add-ons, and libraries, the Hadoop ecosystem is used to build
+          applications on top of the Apache Hadoop platform. Apache Avro framework allows data science engineers to
+          input data once and read it anywhere. This means that you do not have to worry about translating data into
+          different formats, while moving it between other systems. Thrift is an RPC framework for writing services in
+          programming languages like C++ or Java. This can help you communicate across languages and platforms. This
+          framework helps you write code on one platform and run it on any other platform without having to rewrite it.
+        </p><br>
+        <h3>Unique Features of the Ecosystem</h3>
+        <p>Hadoop is a free and open-source software that enables data science professionals to process large datasets
+          in a distributed manner. It is built with Java and can be used as commodity hardware. It can be used for large
+          datasets which can be scaled to handle multiple terabytes of data. Linux servers, network switches, and hard
+          drives are the components of a Hadoop ecosystem. These components can be purchased from any vendor at an
+          affordable price. One of the unique features of Hadoop is its ability to store large unstructured data, which
+          cannot be done on traditional SQL databases.</p><br>
+        <p>Are you an aspiring data science engineer looking to get updated and upskill your career? Learn <a
+            href="../courses/data-science-with-generative-ai.html" style="display: inline; color: deepskyblue;">data
+            science with generative AI course</a> at Grad Certify. With a team of in-house experts who have over 10
+          years of industry-relevant experience, you can get the best guidance from Grad Certify. They offer a virtual
+          classroom learning experience which encompasses practical applications and capstone projects. Get in touch
+          with <a href="../contact-us-2.html" style="display: inline; color: deepskyblue;">Grad Certify</a> for more
+          information on the course. </p><br>
+
+
+
+
+        <!-- ================ REFERENCE ============== -->
+
+        <h3>Reference links:</h3>
+        <p style="color:deepskyblue; font-size: 14px;">
+          <a
+            href="https://www.upgrad.com/blog/hadoop-ecosystem-components/">https://www.upgrad.com/blog/hadoop-ecosystem-components/</a>
+          <a
+            href="https://www.linkedin.com/pulse/hadoop-ecosystem-components-smriti-saini/">https://www.linkedin.com/pulse/hadoop-ecosystem-components-smriti-saini/</a>
+          <a href="https://www.geeksforgeeks.org/hadoop-ecosystem/">https://www.geeksforgeeks.org/hadoop-ecosystem/</a>
+        </p>
+
       </div>
-    </div>
-<!-- ========= SOCIAL SHARE ================ -->
-    <h4 style="font-family: sans-serif; color:#000;">Share on Social Platform:</h4>
-    <div class="social-share">
-      <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" target="_blank"><i class="fab fa-facebook-f" style="font-size: 18px; "></i></a>
-      <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" target="_blank"><i class="fab fa-instagram" style="font-size: 18px; "></i></a>
-      <a href="https://www.linkedin.com/company/Grad Certify-com/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 18px; "></i></a>
-    </div>
+      <!-- ============ AUTHOR DETAILS ============== -->
+      <div class="article-author">
+        <img src="../assets/images/articles/author/Akassh_Vijay.jpg" alt="Akassh Vijay">
+        <div>
+          <h3>Akassh Vijay</h3>
+          <p> <a href="https://www.linkedin.com/in/akassh-vijay-b4548483/" target="_blank"
+              style="color: deepskyblue;">LinkedIn</a> </p>
+        </div>
+      </div>
+      <!-- ========= SOCIAL SHARE ================ -->
+      <h4 style="font-family: sans-serif; color:#000;">Share on Social Platform:</h4>
+      <div class="social-share">
+        <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" target="_blank"><i
+            class="fab fa-facebook-f" style="font-size: 18px; "></i></a>
+        <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" target="_blank"><i
+            class="fab fa-instagram" style="font-size: 18px; "></i></a>
+        <a href="https://www.linkedin.com/company/Grad Certify-com/" target="_blank"><i class="fab fa-linkedin-in"
+            style="font-size: 18px; "></i></a>
+      </div>
 
-<!-- ============== SUBSCRIBE ================== -->
-     <div class="article-subscribe">
+      <!-- ============== SUBSCRIBE ================== -->
+      <div class="article-subscribe">
         <h2>Subscribe to Our Newsletter</h2>
         <form id="subscribeForm">
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <center><button type="submit">Subscribe</button></center>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <center><button type="submit">Subscribe</button></center>
         </form>
-    </div>
+      </div>
 
-    <!-- Popup -->
-    <div class="popup-overlay" id="popupOverlay"></div>
-    <div class="popup" id="popup">
+      <!-- Popup -->
+      <div class="popup-overlay" id="popupOverlay"></div>
+      <div class="popup" id="popup">
         <button class="close-btn" id="closePopup">&times;</button>
         <p id="popupMessage"></p>
-    </div>
-<!-- ========  RECOMMENDED ============== -->
-   <div class="recommended">
-      <h2>Recommended Articles</h2>
-      <div class="recommended-container">
-
-        <!-- ===================================== -->
-        <div class="recommended-card">
-          <img src="../assets/images/articles/article_11.png" alt="Popular Big Data Technology" class="recommended-image">
-          <div class="recommended-content">
-            <a href="popular-big-data-technologies-in-data-science.html"><h3 class="recommended-title">Lifecycle Of AI In Data Science</h3></a> 
-            <p class="recommended-description">Artificial intelligence has revolutionized several organizations across various industries. <a href="popular-big-data-technologies-in-data-science.html" style="color:skyblue;">Learn More <i class="fa fa-arrow-right"></i></a></p>
-          </div>
-        </div>
-      <!-- =========================================== -->
-        <div class="recommended-card">
-          <img src="../assets/images/articles/article_10.png" alt="Lifecycle Of AI In Data Science" class="recommended-image">
-          <div class="recommended-content">
-            <a href="lifecycle-of-data-science-real-time-applications.html"><h3 class="recommended-title">Lifecycle Of Data Science And Its Real-time Applications</h3></a> 
-            <p class="recommended-description">As a professional data science engineer or a fresh graduate aspiring to build your career, <a href="lifecycle-of-data-science-real-time-applications.html" style="color:skyblue;">Learn More <i class="fa fa-arrow-right"></i></a></p>
-          </div>
-        </div>
-
-<!-- ===================================== -->
-        
-
       </div>
+      <!-- ========  RECOMMENDED ============== -->
+      <div class="recommended">
+        <h2>Recommended Articles</h2>
+        <div class="recommended-container">
+
+          <!-- ===================================== -->
+          <div class="recommended-card">
+            <img src="../assets/images/articles/article_11.png" alt="Popular Big Data Technology"
+              class="recommended-image">
+            <div class="recommended-content">
+              <a href="popular-big-data-technologies-in-data-science.html">
+                <h3 class="recommended-title">Lifecycle Of AI In Data Science</h3>
+              </a>
+              <p class="recommended-description">Artificial intelligence has revolutionized several organizations across
+                various industries. <a href="popular-big-data-technologies-in-data-science.html"
+                  style="color:skyblue;">Learn More <i class="fa fa-arrow-right"></i></a></p>
+            </div>
+          </div>
+          <!-- =========================================== -->
+          <div class="recommended-card">
+            <img src="../assets/images/articles/article_10.png" alt="Lifecycle Of AI In Data Science"
+              class="recommended-image">
+            <div class="recommended-content">
+              <a href="lifecycle-of-data-science-real-time-applications.html">
+                <h3 class="recommended-title">Lifecycle Of Data Science And Its Real-time Applications</h3>
+              </a>
+              <p class="recommended-description">As a professional data science engineer or a fresh graduate aspiring to
+                build your career, <a href="lifecycle-of-data-science-real-time-applications.html"
+                  style="color:skyblue;">Learn More <i class="fa fa-arrow-right"></i></a></p>
+            </div>
+          </div>
+
+          <!-- ===================================== -->
+
+
+        </div>
+      </div>
+
     </div>
 
-  </div>
-
-</section>
-    </article>
+  </section>
+  </article>
   </main>
 
 
 
 
 
-  
-<!-- -------BODY END -------------------------- -->
 
-<!-- =============== FOOTER ================ -->
+  <!-- -------BODY END -------------------------- -->
 
- 
+  <!-- =============== FOOTER ================ -->
+
+
   <!-- 
     - #FOOTER
   -->
@@ -577,10 +665,11 @@
           </a>
 
           <p class="footer-brand-text">
-            At Grad Certify, we offer comprehensive online courses with expert instructors and cutting-edge curriculum, Grad Certify is the perfect choice for those serious about success in the tech industry.
+
+            TR 306, 3 Floor AltF 101 Okhla, NH-19, CRRI, ISHWAR NAGAR , OKHLA NEW DELHI - 110044
           </p>
 
-         <!-- <div class="wrapper">
+          <!-- <div class="wrapper">
             <span class="span">Address:</span>
 
             <address class="address"> B-Block, BHIVE Workspace - No.112, AKR Tech Park, "A" and, 7th Mile Hosur Rd, Krishna Reddy Industrial Area, Bengaluru, Karnataka- s560068</address>
@@ -589,13 +678,15 @@
           <div class="wrapper">
             <span class="span">Call:</span>
 
-            <a href="tel:+917411464640" class="footer-link">+91 7411 464 640</a>
+            <a href="tel:+917411464640" class="footer-link">ll:
+              +91 84472 58207</a>
           </div>
 
           <div class="wrapper">
             <span class="span">Email:</span>
 
-            <a href="mailto:support@Grad Certify.com" class="footer-link">support@Grad Certify.com</a>
+            <a href="mailto:support@Grad Certify.com" class="footer-link">
+              info@gradcertify.com</a>
           </div>
 
         </div>
@@ -642,9 +733,9 @@
             <a href="../contact-us.html" class="footer-link">Contact Us</a>
           </li>
 
-            <li>
+          <li>
             <a href="../instructors.html" class="footer-link">Instructor</a>
-          </li> 
+          </li>
 
           <li>
             <a href="../our-team.html" class="footer-link">Our Team</a>
@@ -658,22 +749,19 @@
           <!--<li>-->
           <!--  <a href="../news-updates" class="footer-link">News</a>-->
           <!--</li>-->
-          
-           <!--<li>
+
+          <!--<li>
             <a href="../current-openings.php" class="footer-link">Current Openings</a>
           </li> -->
 
           <li>
             <a href="../faqs.html" class="footer-link">FAQs</a>
           </li>
-          
-            <li>
-              <a
-                href="https://www.google.com/search?sca_esv=0e58669465c64ea2&amp;rlz=1C1CHBF_enIN1024IN1024&amp;sxsrf=AE3TifPDQXz4KGp_OPnFaNKkzY5IjuTYkA:1750921551557&amp;si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1oJ7PBp83PEWzfEE9P0MDjL0cfOCHY1-lOgc1vdWqwnRkzMJyy_fGEJbvyYLZ_huGqqZ7dewNNaquMeY9EO6NJbz-X9&amp;q=Grad Certify+Pvt+Ltd+Reviews&amp;sa=X&amp;ved=2ahUKEwiQwfCIw46OAxUPzTgGHQGjKBYQ0bkNegQINBAE&amp;cshid=1750921567441879&amp;biw=1536&amp;bih=695&amp;dpr=1.25#lrd=0x890b8701b2132843:0x20a4928ed3930407,3,,,,"
-                class="footer-link"
-                >Review Us</a
-              >
-            </li>
+
+          <li>
+            <a href="https://www.google.com/search?sca_esv=0e58669465c64ea2&amp;rlz=1C1CHBF_enIN1024IN1024&amp;sxsrf=AE3TifPDQXz4KGp_OPnFaNKkzY5IjuTYkA:1750921551557&amp;si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1oJ7PBp83PEWzfEE9P0MDjL0cfOCHY1-lOgc1vdWqwnRkzMJyy_fGEJbvyYLZ_huGqqZ7dewNNaquMeY9EO6NJbz-X9&amp;q=Grad Certify+Pvt+Ltd+Reviews&amp;sa=X&amp;ved=2ahUKEwiQwfCIw46OAxUPzTgGHQGjKBYQ0bkNegQINBAE&amp;cshid=1750921567441879&amp;biw=1536&amp;bih=695&amp;dpr=1.25#lrd=0x890b8701b2132843:0x20a4928ed3930407,3,,,,"
+              class="footer-link">Review Us</a>
+          </li>
 
         </ul>
 
@@ -698,19 +786,22 @@
           <ul class="social-list">
 
             <li>
-              <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" class="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61554376480864&amp;mibextid=nwBsNb" class="social-link"
+                target="_blank" rel="noopener noreferrer">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="https://www.linkedin.com/company/Grad Certify-com/" class="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/Grad Certify-com/" class="social-link" target="_blank"
+                rel="noopener noreferrer">
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr" class="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/Grad Certify.s?igsh=aWFlYmExYTdxdDA5&amp;utm_source=qr"
+                class="social-link" target="_blank" rel="noopener noreferrer">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
@@ -722,7 +813,8 @@
             </li> -->
 
             <li>
-              <a href="https://www.youtube.com/@Grad Certify-LeadwithSkills" class="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@Grad Certify-LeadwithSkills" class="social-link" target="_blank"
+                rel="noopener noreferrer">
                 <ion-icon name="logo-youtube"></ion-icon>
               </a>
             </li>
@@ -777,58 +869,59 @@
     });
   </script>
 
-<!-- ======= SUBSCRIBE ============= -->
- <script>
-        // Get elements
-        const form = document.getElementById('subscribeForm');
-        const popup = document.getElementById('popup');
-        const popupOverlay = document.getElementById('popupOverlay');
-        const closePopup = document.getElementById('closePopup');
-        const popupMessage = document.getElementById('popupMessage');
+  <!-- ======= SUBSCRIBE ============= -->
+  <script>
+    // Get elements
+    const form = document.getElementById('subscribeForm');
+    const popup = document.getElementById('popup');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const closePopup = document.getElementById('closePopup');
+    const popupMessage = document.getElementById('popupMessage');
 
-        // Handle form submission
-        form.addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent page reload
+    // Handle form submission
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent page reload
 
-            // Get the email value
-            const email = document.getElementById('email').value;
+      // Get the email value
+      const email = document.getElementById('email').value;
 
-            // Send data to PHP using AJAX
-            fetch('subscribe.html', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: `email=${encodeURIComponent(email)}`
-            })
-            .then(response => response.text())
-            .then(data => {
-                if (data.trim() === 'success') {
-                    popupMessage.textContent = 'Thank you for subscribing!';
-                } else {
-                    popupMessage.textContent = data;
-                }
-                popup.style.display = 'block';
-                popupOverlay.style.display = 'block';
-                form.reset();
-            })
-            .catch(error => {
-                popupMessage.textContent = 'An error occurred. Please try again.';
-                popup.style.display = 'block';
-                popupOverlay.style.display = 'block';
-            });
+      // Send data to PHP using AJAX
+      fetch('subscribe.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: `email=${encodeURIComponent(email)}`
+      })
+        .then(response => response.text())
+        .then(data => {
+          if (data.trim() === 'success') {
+            popupMessage.textContent = 'Thank you for subscribing!';
+          } else {
+            popupMessage.textContent = data;
+          }
+          popup.style.display = 'block';
+          popupOverlay.style.display = 'block';
+          form.reset();
+        })
+        .catch(error => {
+          popupMessage.textContent = 'An error occurred. Please try again.';
+          popup.style.display = 'block';
+          popupOverlay.style.display = 'block';
         });
+    });
 
-        // Close popup
-        closePopup.addEventListener('click', function () {
-            popup.style.display = 'none';
-            popupOverlay.style.display = 'none';
-        });
+    // Close popup
+    closePopup.addEventListener('click', function () {
+      popup.style.display = 'none';
+      popupOverlay.style.display = 'none';
+    });
 
-        popupOverlay.addEventListener('click', function () {
-            popup.style.display = 'none';
-            popupOverlay.style.display = 'none';
-        });
-    </script>
+    popupOverlay.addEventListener('click', function () {
+      popup.style.display = 'none';
+      popupOverlay.style.display = 'none';
+    });
+  </script>
 </body>
 
 <!-- Mirrored from www.Grad Certify.com/blog-repository/understanding-hadoop-ecosystem-big-data by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 04:37:50 GMT -->
+
 </html>
